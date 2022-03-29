@@ -1,0 +1,52 @@
+PODS:
+  - GoogleMaps (5.2.0):
+    - GoogleMaps/Maps (= 5.2.0)
+  - GoogleMaps/Base (5.2.0)
+  - GoogleMaps/Maps (5.2.0):
+    - GoogleMaps/Base
+  - GooglePlaces (5.1.0)
+  - IQKeyboardManagerSwift (6.5.9)
+  - JWTDecode (2.6.3)
+  - Kingfisher (7.1.2)
+  - RangeSeekSlider (1.8.0)
+  - razorpay-pod (1.1.16)
+  - Siren (5.2.3)
+  - SkyFloatingLabelTextField (3.8.0)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
+  - IQKeyboardManagerSwift
+  - JWTDecode (~> 2.6)
+  - Kingfisher (~> 7.0)
+  - RangeSeekSlider
+  - razorpay-pod (~> 1.1.1)
+  - Siren (~> 5.2.1)
+  - SkyFloatingLabelTextField (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManagerSwift
+    - JWTDecode
+    - Kingfisher
+    - RangeSeekSlider
+    - razorpay-pod
+    - Siren
+    - SkyFloatingLabelTextField
+
+SPEC CHECKSUMS:
+  GoogleMaps: 025272d5876d3b32604e5c080dc25eaf68764693
+  GooglePlaces: c57cd5aa7e91d10fa5106c792de74f3bd6436260
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
+  razorpay-pod: f1763f8ee8f83152837abe7de1cdfbcd4eb035b9
+  Siren: 996f37869eae1f343f8c11f17d90c9c8da90bd4c
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+
+PODFILE CHECKSUM: 6f0da50fd60d495227acf32d406b69a3aaa213f6
+
+COCOAPODS: 1.11.2

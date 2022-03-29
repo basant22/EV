@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "icons8-building-with-rooftop-terrace-50.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "icons8-building-with-rooftop-terrace-51.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "icons8-building-with-rooftop-terrace-52.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

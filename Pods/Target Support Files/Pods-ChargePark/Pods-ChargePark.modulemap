@@ -1,0 +1,6 @@
+framework module Pods_ChargePark {
+  umbrella header "Pods-ChargePark-umbrella.h"
+
+  export *
+  module * { export * }
+}

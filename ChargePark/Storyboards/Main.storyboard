@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IdL-nr-2Qa">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pre LoginVC-->
+        <scene sceneID="ZTh-xl-J24">
+            <objects>
+                <viewController storyboardIdentifier="PreLoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jmp-S3-a12" customClass="PreLoginVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aN9-sN-wwz">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZqK-fh-TPw">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jmp-S3-a12" id="YJr-jy-Wqy"/>
+                                    <outlet property="delegate" destination="jmp-S3-a12" id="iD2-vh-zPT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kAC-1i-Vme"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZqK-fh-TPw" firstAttribute="top" secondItem="kAC-1i-Vme" secondAttribute="top" id="N7t-0w-jsh"/>
+                            <constraint firstItem="kAC-1i-Vme" firstAttribute="bottom" secondItem="ZqK-fh-TPw" secondAttribute="bottom" id="T4s-P3-xfc"/>
+                            <constraint firstItem="ZqK-fh-TPw" firstAttribute="trailing" secondItem="kAC-1i-Vme" secondAttribute="trailing" id="yEe-c8-SYf"/>
+                            <constraint firstItem="ZqK-fh-TPw" firstAttribute="leading" secondItem="kAC-1i-Vme" secondAttribute="leading" id="yzb-3w-caB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Aez-i6-c6r"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZqK-fh-TPw" id="5bl-Z6-T6c"/>
+                        <segue destination="9eo-if-bzf" kind="show" identifier="Login" id="oFa-gf-a6T"/>
+                        <segue destination="Zgh-sc-fjP" kind="show" identifier="Registration" id="jYd-mB-Rnj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GHu-1k-wmC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402.3364485981308" y="53.131749460043203"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y3h-UY-uhh">
+            <objects>
+                <navigationController storyboardIdentifier="mainNavigation" automaticallyAdjustsScrollViewInsets="NO" id="IdL-nr-2Qa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fc5-za-un3">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jmp-S3-a12" kind="relationship" relationship="rootViewController" id="vgv-zf-VC9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qg4-8i-ccx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-297" y="54"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="Vte-rX-rZ2">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="LoginVC" storyboardName="Login" referencedIdentifier="LoginVC" id="9eo-if-bzf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="SwY-FB-OfJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Z4-hk-VLx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1947" y="551"/>
+        </scene>
+        <!--UIViewController-zo5-yl-cbX-->
+        <scene sceneID="iPC-u0-BMZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Registration" referencedIdentifier="UIViewController-zo5-yl-cbX" id="Zgh-sc-fjP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kWy-2b-XC5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNf-U5-m7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163.5514018691588" y="-229.37365010799138"/>
+        </scene>
+        <!--StateVC-->
+        <scene sceneID="ntK-MA-Fwh">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="StateVC" storyboardName="Registration" referencedIdentifier="StateVC" id="6Oy-yj-hv4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89K-5p-l2M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858" y="-229"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

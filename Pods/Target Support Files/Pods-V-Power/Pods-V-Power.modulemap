@@ -1,0 +1,6 @@
+framework module Pods_V_Power {
+  umbrella header "Pods-V-Power-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wlm-Il-AnG">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cancelled-->
+        <scene sceneID="nDC-HX-pGJ">
+            <objects>
+                <viewController storyboardIdentifier="CancelledBookingVC" id="fN2-P4-hHt" customClass="CancelledBookingVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5R0-cn-aJC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oS6-CA-qbk">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fN2-P4-hHt" id="mS4-E8-9hU"/>
+                                    <outlet property="delegate" destination="fN2-P4-hHt" id="fJx-z4-fRj"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZf-Mj-5ca">
+                                <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mxi-X4-Xfe"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Cancelled Bookings" id="Mqj-mc-KlS">
+                                        <barButtonItem key="leftBarButtonItem" image="ic_menu_white" id="DTr-9x-TIv">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Dv-J4-HdJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oS6-CA-qbk" firstAttribute="top" secondItem="fZf-Mj-5ca" secondAttribute="bottom" id="2Xp-2j-ksT"/>
+                            <constraint firstItem="oS6-CA-qbk" firstAttribute="bottom" secondItem="4Dv-J4-HdJ" secondAttribute="bottom" id="4ve-Bi-7Gr"/>
+                            <constraint firstAttribute="trailing" secondItem="oS6-CA-qbk" secondAttribute="trailing" id="CYH-1M-Yhl"/>
+                            <constraint firstItem="fZf-Mj-5ca" firstAttribute="leading" secondItem="4Dv-J4-HdJ" secondAttribute="leading" id="T9P-D0-UuU"/>
+                            <constraint firstItem="fZf-Mj-5ca" firstAttribute="top" secondItem="4Dv-J4-HdJ" secondAttribute="top" id="Ykc-Iv-VRU"/>
+                            <constraint firstItem="oS6-CA-qbk" firstAttribute="leading" secondItem="4Dv-J4-HdJ" secondAttribute="leading" id="gFA-9Y-vUb"/>
+                            <constraint firstItem="fZf-Mj-5ca" firstAttribute="trailing" secondItem="4Dv-J4-HdJ" secondAttribute="trailing" id="r80-Bb-kg0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cancelled" image="trash" catalog="system" selectedImage="trash.fill" id="4jb-5C-64l"/>
+                    <connections>
+                        <outlet property="menuButton" destination="DTr-9x-TIv" id="6GB-mX-xcv"/>
+                        <outlet property="navigation" destination="fZf-Mj-5ca" id="MFM-8p-qRK"/>
+                        <outlet property="tableView" destination="oS6-CA-qbk" id="PaH-9m-cM3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1Y-wk-gnb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684.61538461538464" y="824.64454976303318"/>
+        </scene>
+        <!--Completed-->
+        <scene sceneID="T4r-ll-dFG">
+            <objects>
+                <viewController storyboardIdentifier="CompletedBookingVC" id="wYa-oG-rZH" customClass="CompletedBookingVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9d8-fL-cN2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XtT-Az-wlK">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="wYa-oG-rZH" id="A3N-JB-xYT"/>
+                                    <outlet property="delegate" destination="wYa-oG-rZH" id="P8P-tA-cgW"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKQ-o0-Vv5">
+                                <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="O53-Ob-8HD"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Completed Bookings" id="Ole-ww-M4N">
+                                        <barButtonItem key="leftBarButtonItem" image="ic_menu_white" id="wr8-F5-AhW">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mJG-wk-Gli"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xKQ-o0-Vv5" firstAttribute="leading" secondItem="mJG-wk-Gli" secondAttribute="leading" id="6by-J5-Pbn"/>
+                            <constraint firstItem="XtT-Az-wlK" firstAttribute="trailing" secondItem="mJG-wk-Gli" secondAttribute="trailing" id="8fF-Hp-9Nv"/>
+                            <constraint firstItem="xKQ-o0-Vv5" firstAttribute="trailing" secondItem="mJG-wk-Gli" secondAttribute="trailing" id="GeR-hY-L7C"/>
+                            <constraint firstItem="XtT-Az-wlK" firstAttribute="bottom" secondItem="mJG-wk-Gli" secondAttribute="bottom" id="LqL-P4-Aa2"/>
+                            <constraint firstItem="xKQ-o0-Vv5" firstAttribute="top" secondItem="mJG-wk-Gli" secondAttribute="top" id="OeE-95-cKZ"/>
+                            <constraint firstItem="XtT-Az-wlK" firstAttribute="top" secondItem="xKQ-o0-Vv5" secondAttribute="bottom" id="Zrs-N4-Kv5"/>
+                            <constraint firstItem="XtT-Az-wlK" firstAttribute="leading" secondItem="mJG-wk-Gli" secondAttribute="leading" id="fzT-iW-30a"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Completed" image="macpro.gen2" catalog="system" selectedImage="macpro.gen2.fill" id="979-Lk-ceJ"/>
+                    <connections>
+                        <outlet property="menuButton" destination="wr8-F5-AhW" id="3sb-zQ-hMJ"/>
+                        <outlet property="navigation" destination="xKQ-o0-Vv5" id="yLJ-UD-czl"/>
+                        <outlet property="tableView" destination="XtT-Az-wlK" id="wjS-g7-Ju0"/>
+                        <segue destination="PbD-Ip-f6D" kind="presentation" identifier="invoice" id="GKy-oO-jPc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIU-na-jyC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537" y="825"/>
+        </scene>
+        <!--PdfVC-->
+        <scene sceneID="7ks-2t-zEX">
+            <objects>
+                <viewController id="PbD-Ip-f6D" customClass="PdfVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UwX-Ng-PzF">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67u-z0-c93">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufq-SM-iUP">
+                                        <rect key="frame" x="335" y="5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="RRS-BC-bdU"/>
+                                            <constraint firstAttribute="height" constant="40" id="Spi-cr-rYz"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="dismis" destination="PbD-Ip-f6D" eventType="touchUpInside" id="DW0-SX-b3w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1ix-pE-8qt"/>
+                                    <constraint firstAttribute="trailing" secondItem="ufq-SM-iUP" secondAttribute="trailing" constant="15" id="37F-AY-EnU"/>
+                                    <constraint firstItem="ufq-SM-iUP" firstAttribute="centerY" secondItem="67u-z0-c93" secondAttribute="centerY" id="IBh-7f-RJy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBf-GQ-aET" customClass="PDFView">
+                                <rect key="frame" x="0.0" y="50" width="390" height="706"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O2T-1H-VGj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O2T-1H-VGj" firstAttribute="trailing" secondItem="UBf-GQ-aET" secondAttribute="trailing" id="3af-Ko-qpb"/>
+                            <constraint firstItem="UBf-GQ-aET" firstAttribute="top" secondItem="67u-z0-c93" secondAttribute="bottom" id="6gU-yT-KE1"/>
+                            <constraint firstItem="67u-z0-c93" firstAttribute="leading" secondItem="O2T-1H-VGj" secondAttribute="leading" id="6ja-uQ-KTf"/>
+                            <constraint firstItem="O2T-1H-VGj" firstAttribute="trailing" secondItem="67u-z0-c93" secondAttribute="trailing" id="KbJ-Uw-s8d"/>
+                            <constraint firstItem="O2T-1H-VGj" firstAttribute="bottom" secondItem="UBf-GQ-aET" secondAttribute="bottom" id="a05-WI-Yo9"/>
+                            <constraint firstItem="67u-z0-c93" firstAttribute="top" secondItem="O2T-1H-VGj" secondAttribute="top" id="a55-37-CRg"/>
+                            <constraint firstItem="UBf-GQ-aET" firstAttribute="leading" secondItem="O2T-1H-VGj" secondAttribute="leading" id="bwn-YL-CGT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCancel" destination="ufq-SM-iUP" id="INh-JA-MDZ"/>
+                        <outlet property="viewHeader" destination="67u-z0-c93" id="0GL-9z-JD6"/>
+                        <outlet property="viewPdf" destination="UBf-GQ-aET" id="Ceg-Pn-Yac"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Vp-zt-tId" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2289.2307692307691" y="699.52606635071083"/>
+        </scene>
+        <!--New Bookings-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MyBookingVC" id="Y6W-OH-hqX" customClass="MyBookingVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Af2-NN-qey">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="X9P-sZ-3XY"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="gro-Qb-ROf"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1c-YH-I5k">
+                                <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Bai-Fx-A9Y"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="New Bookings" id="3xf-PG-3v4">
+                                        <barButtonItem key="leftBarButtonItem" image="ic_menu_white" id="Vtm-hm-BIH"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Af2-NN-qey" firstAttribute="top" secondItem="B1c-YH-I5k" secondAttribute="bottom" id="Nbt-lJ-g7j"/>
+                            <constraint firstItem="Af2-NN-qey" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UzP-sW-m3R"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Af2-NN-qey" secondAttribute="trailing" id="Y61-sp-3qJ"/>
+                            <constraint firstItem="B1c-YH-I5k" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="YQ6-bG-ymj"/>
+                            <constraint firstItem="B1c-YH-I5k" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="f5z-fs-W2C"/>
+                            <constraint firstItem="B1c-YH-I5k" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="mQx-hp-HHV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Af2-NN-qey" secondAttribute="bottom" id="wwy-YJ-izr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="New Bookings" image="bolt.car" catalog="system" selectedImage="bolt.car.fill" id="AeH-N5-ssI"/>
+                    <connections>
+                        <outlet property="menuButton" destination="Vtm-hm-BIH" id="cs7-Xh-fQD"/>
+                        <outlet property="navigation" destination="B1c-YH-I5k" id="xUf-uk-bp3"/>
+                        <outlet property="tableView" destination="Af2-NN-qey" id="396-cf-OOS"/>
+                        <segue destination="zjh-ui-y8q" kind="presentation" identifier="Cancel" id="M5M-nA-PzH"/>
+                        <segue destination="lwK-nz-hdd" kind="show" identifier="StartCharging" id="5ej-wz-p3c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840" y="42.654028436018955"/>
+        </scene>
+        <!--StartCharging-->
+        <scene sceneID="Ugz-i9-wiF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StartCharging" id="lwK-nz-hdd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Eyd-wi-DM5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7N-QY-XjC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2442" y="-429"/>
+        </scene>
+        <!--Cancel MsgVC-->
+        <scene sceneID="gul-X6-0Fj">
+            <objects>
+                <viewController id="zjh-ui-y8q" customClass="CancelMsgVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DO6-uh-2Ut">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D81-1O-dsA" customClass="Card" customModule="ChargePark" customModuleProvider="target">
+                                <rect key="frame" x="19.666666666666657" y="386" width="351" height="370"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to cancel booking?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdO-rR-bal">
+                                        <rect key="frame" x="5" y="10" width="341" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancellation amount deduction as:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7s-rP-etY">
+                                        <rect key="frame" x="5" y="39" width="341" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 hours before  10% total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czm-Ja-2RV">
+                                        <rect key="frame" x="2" y="70.666666666666686" width="347" height="21.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value excluding GST and electricity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grH-DC-IeU">
+                                        <rect key="frame" x="2" y="94" width="347" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 hours before  20% total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qK3-4a-zzF">
+                                        <rect key="frame" x="2" y="125.66666666666667" width="347" height="21.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value excluding GST and electricity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEK-W9-mIE">
+                                        <rect key="frame" x="2" y="149" width="347" height="21.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 hours before  40% total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mn-H1-oLm">
+                                        <rect key="frame" x="2" y="180.66666666666663" width="347" height="21.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value excluding GST and electricity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDA-gv-Tbg">
+                                        <rect key="frame" x="2" y="204" width="347" height="21.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 hours before  60% total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pR7-1s-Mt6">
+                                        <rect key="frame" x="2" y="235.66666666666663" width="347" height="21.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value excluding GST and electricity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETH-au-Aa1">
+                                        <rect key="frame" x="2" y="259" width="347" height="21.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lb-hF-iIj">
+                                        <rect key="frame" x="182.66666666666669" y="321" width="162.66666666666669" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnCancel:" destination="zjh-ui-y8q" eventType="touchUpInside" id="7q2-E1-rzr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42w-jE-Xcp">
+                                        <rect key="frame" x="10" y="321" width="162.66666666666666" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="bqc-EJ-KZR"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Confirm">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnConfirm:" destination="zjh-ui-y8q" eventType="touchUpInside" id="rRX-WW-UMe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5lb-hF-iIj" firstAttribute="leading" secondItem="42w-jE-Xcp" secondAttribute="trailing" constant="10" id="1LD-AV-Bl6"/>
+                                    <constraint firstItem="EDA-gv-Tbg" firstAttribute="top" secondItem="4mn-H1-oLm" secondAttribute="bottom" constant="2" id="2pc-ww-9p4"/>
+                                    <constraint firstAttribute="trailing" secondItem="V7s-rP-etY" secondAttribute="trailing" constant="5" id="3jT-64-83F"/>
+                                    <constraint firstAttribute="trailing" secondItem="qK3-4a-zzF" secondAttribute="trailing" constant="2" id="3tB-cb-PUv"/>
+                                    <constraint firstItem="pdO-rR-bal" firstAttribute="top" secondItem="D81-1O-dsA" secondAttribute="top" constant="10" id="5f8-Al-rad"/>
+                                    <constraint firstItem="qK3-4a-zzF" firstAttribute="leading" secondItem="D81-1O-dsA" secondAttribute="leading" constant="2" id="6dh-hH-wY0"/>
+                                    <constraint firstAttribute="trailing" secondItem="4mn-H1-oLm" secondAttribute="trailing" constant="2" id="A9Y-N6-ln2"/>
+                                    <constraint firstItem="42w-jE-Xcp" firstAttribute="width" secondItem="D81-1O-dsA" secondAttribute="width" multiplier="0.463592" id="CFg-wG-Prg"/>
+                                    <constraint firstItem="qK3-4a-zzF" firstAttribute="top" secondItem="grH-DC-IeU" secondAttribute="bottom" constant="10" id="Da5-sc-c6b"/>
+                                    <constraint firstAttribute="height" constant="370" id="Gea-V2-eky"/>
+                                    <constraint firstItem="czm-Ja-2RV" firstAttribute="top" secondItem="V7s-rP-etY" secondAttribute="bottom" constant="10" id="HUA-2q-sHK"/>
+                                    <constraint firstItem="ETH-au-Aa1" firstAttribute="top" secondItem="pR7-1s-Mt6" secondAttribute="bottom" constant="2" id="I8o-O1-0ct"/>
+                                    <constraint firstItem="ETH-au-Aa1" firstAttribute="leading" secondItem="D81-1O-dsA" secondAttribute="leading" constant="2" id="JIs-zx-1yV"/>
+                                    <constraint firstItem="grH-DC-IeU" firstAttribute="leading" secondItem="D81-1O-dsA" secondAttribute="leading" constant="2" id="LIQ-9m-Oij"/>
+                                    <constraint firstAttribute="trailing" secondItem="pdO-rR-bal" secondAttribute="trailing" constant="5" id="Lbo-i8-i4K"/>
+                                    <constraint firstItem="pR7-1s-Mt6" firstAttribute="top" secondItem="EDA-gv-Tbg" secondAttribute="bottom" constant="10" id="MO6-8n-kCB"/>
+                                    <constraint firstItem="pdO-rR-bal" firstAttribute="leading" secondItem="D81-1O-dsA" secondAttribute="leading" constant="5" id="Nle-Lr-cLs"/>
+                                    <constraint firstItem="grH-DC-IeU" firstAttribute="top" secondItem="czm-Ja-2RV" secondAttribute="bottom" constant="2" id="NyD-7V-p3a"/>
+                                    <constraint firstItem="42w-jE-Xcp" firstAttribute="leading" secondItem="D81-1O-dsA" secondAttribute="leading" constant="10" id="QUG-O6-hWf"/>
+                                    <constraint firstItem="YEK-W9-mIE" firstAttribute="leading" secondItem="D81-1O-dsA" secondAttribute="leading" constant="2" id="U1N-fQ-xvd"/>
+                                    <constraint firstItem="pR7-1s-Mt6" firstAttribute="leading" secondItem="D81-1O-dsA" secondAttribute="leading" constant="2" id="UIv-mY-H1m"/>
+                                    <constraint firstAttribute="trailing" secondItem="ETH-au-Aa1" secondAttribute="trailing" constant="2" id="Y0u-c6-MhM"/>
+                                    <constraint firstItem="czm-Ja-2RV" firstAttribute="leading" secondItem="D81-1O-dsA" secondAttribute="leading" constant="2" id="Zd6-1f-lGe"/>
+                                    <constraint firstAttribute="trailing" secondItem="grH-DC-IeU" secondAttribute="trailing" constant="2" id="Zg4-Xc-WhE"/>
+                                    <constraint firstItem="4mn-H1-oLm" firstAttribute="top" secondItem="YEK-W9-mIE" secondAttribute="bottom" constant="10" id="akz-le-fCc"/>
+                                    <constraint firstItem="5lb-hF-iIj" firstAttribute="width" secondItem="42w-jE-Xcp" secondAttribute="width" id="enh-hT-Y0N"/>
+                                    <constraint firstAttribute="trailing" secondItem="pR7-1s-Mt6" secondAttribute="trailing" constant="2" id="fG5-mC-rK9"/>
+                                    <constraint firstAttribute="trailing" secondItem="YEK-W9-mIE" secondAttribute="trailing" constant="2" id="gUq-MV-nm5"/>
+                                    <constraint firstAttribute="bottom" secondItem="5lb-hF-iIj" secondAttribute="bottom" constant="5" id="gr5-wH-xnd"/>
+                                    <constraint firstAttribute="trailing" secondItem="czm-Ja-2RV" secondAttribute="trailing" constant="2" id="hgs-dI-voY"/>
+                                    <constraint firstAttribute="bottom" secondItem="42w-jE-Xcp" secondAttribute="bottom" constant="5" id="jNQ-GA-b4o"/>
+                                    <constraint firstItem="V7s-rP-etY" firstAttribute="leading" secondItem="D81-1O-dsA" secondAttribute="leading" constant="5" id="kHR-dB-P8T"/>
+                                    <constraint firstItem="4mn-H1-oLm" firstAttribute="leading" secondItem="D81-1O-dsA" secondAttribute="leading" constant="2" id="qpk-g6-rqF"/>
+                                    <constraint firstItem="EDA-gv-Tbg" firstAttribute="leading" secondItem="D81-1O-dsA" secondAttribute="leading" constant="2" id="rUw-w9-48V"/>
+                                    <constraint firstItem="V7s-rP-etY" firstAttribute="top" secondItem="pdO-rR-bal" secondAttribute="bottom" constant="5" id="s0U-es-lVB"/>
+                                    <constraint firstAttribute="trailing" secondItem="EDA-gv-Tbg" secondAttribute="trailing" constant="2" id="tCY-A3-dV7"/>
+                                    <constraint firstItem="5lb-hF-iIj" firstAttribute="height" secondItem="42w-jE-Xcp" secondAttribute="height" id="uEy-PD-gMq"/>
+                                    <constraint firstItem="YEK-W9-mIE" firstAttribute="top" secondItem="qK3-4a-zzF" secondAttribute="bottom" constant="2" id="wg8-1b-els"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G8I-EA-u60"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D81-1O-dsA" firstAttribute="width" secondItem="DO6-uh-2Ut" secondAttribute="width" multiplier="0.9" id="Ugb-ud-nvR"/>
+                            <constraint firstItem="D81-1O-dsA" firstAttribute="bottom" secondItem="G8I-EA-u60" secondAttribute="bottom" id="pQr-oG-NZe"/>
+                            <constraint firstItem="D81-1O-dsA" firstAttribute="centerX" secondItem="DO6-uh-2Ut" secondAttribute="centerX" id="ywO-HG-Rs7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brnCancel" destination="5lb-hF-iIj" id="xLQ-ei-cMy"/>
+                        <outlet property="btnConfirm" destination="42w-jE-Xcp" id="g1E-4p-I1E"/>
+                        <outlet property="viewContainer" destination="D81-1O-dsA" id="whz-a9-9jZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFe-EV-6FH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2810.7692307692305" y="91.706161137440759"/>
+        </scene>
+        <!--Booking TabVC-->
+        <scene sceneID="gGT-GS-Nvm">
+            <objects>
+                <tabBarController storyboardIdentifier="BookingTabVC" automaticallyAdjustsScrollViewInsets="NO" id="Wlm-Il-AnG" customClass="BookingTabVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="J6L-Wa-5DN"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yTt-JJ-oSG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="PKg-KD-rVm"/>
+                        <segue destination="wYa-oG-rZH" kind="relationship" relationship="viewControllers" id="Doc-bC-meY"/>
+                        <segue destination="fN2-P4-hHt" kind="relationship" relationship="viewControllers" id="g02-Sh-wud"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zjl-6e-jZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bolt.car" catalog="system" width="128" height="93"/>
+        <image name="bolt.car.fill" catalog="system" width="128" height="93"/>
+        <image name="ic_menu_white" width="24" height="24"/>
+        <image name="macpro.gen2" catalog="system" width="96" height="128"/>
+        <image name="macpro.gen2.fill" catalog="system" width="96" height="128"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ChargePark.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>EV Plugin Charge.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>GoGedi.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>StartEVCharge.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
+		<key>V-Power.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>VRAJEV Charge.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1803501A27182DFE00CCAED9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>181DA8D927CF6FAF0024BFC6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>187CBE3A26EF633E00C3B611</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>187CBE5326EF634100C3B611</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>187CBE5E26EF634100C3B611</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>18A34A4F27EA376500C9FF9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>18CA7EB82754D45A0053CD33</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

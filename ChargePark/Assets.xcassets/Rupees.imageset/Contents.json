@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "152-1522541_indian-rupee-inr-currency-finance-business-rupee-symbol.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "152-1522541_indian-rupee-inr-currency-finance-business-rupee-symbol-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "152-1522541_indian-rupee-inr-currency-finance-business-rupee-symbol-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

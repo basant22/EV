@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="238" id="KGk-i7-Jjw" customClass="EmptyCellCell" customModule="V_Power" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="238"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="238"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigCar" translatesAutoresizingMaskIntoConstraints="NO" id="8Dg-pK-HRM">
+                        <rect key="frame" x="135" y="94" width="50" height="50"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No vehicle is added." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf5-8g-Z5O">
+                        <rect key="frame" x="68.5" y="154" width="183.5" height="25.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Dg-pK-HRM" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.210084" id="AdY-aS-dT8"/>
+                    <constraint firstItem="8Dg-pK-HRM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ND2-hH-EIS"/>
+                    <constraint firstItem="tf5-8g-Z5O" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="U1O-mI-ecK"/>
+                    <constraint firstItem="8Dg-pK-HRM" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.15625" id="Wcw-FR-sFp"/>
+                    <constraint firstItem="tf5-8g-Z5O" firstAttribute="top" secondItem="8Dg-pK-HRM" secondAttribute="bottom" constant="10" id="c68-2U-tKi"/>
+                    <constraint firstItem="8Dg-pK-HRM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="w6S-Pj-03d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="8Dg-pK-HRM" id="FGd-cU-6h4"/>
+                <outlet property="lblTitle" destination="tf5-8g-Z5O" id="22K-h2-cz5"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="129.91071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BigCar" width="50" height="50"/>
+    </resources>
+</document>

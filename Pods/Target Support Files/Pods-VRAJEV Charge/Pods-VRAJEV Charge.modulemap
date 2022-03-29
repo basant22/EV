@@ -1,0 +1,6 @@
+framework module Pods_VRAJEV_Charge {
+  umbrella header "Pods-VRAJEV Charge-umbrella.h"
+
+  export *
+  module * { export * }
+}
