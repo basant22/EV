@@ -73,6 +73,9 @@ class PaymentVC: UIViewController{
         if Theme.appName == "VRAJEV Charge"{
             self.titleButton.title = "My Pocket"
         }
+        if Theme.appName == "EV Plugin Charge"{
+            self.titleButton.title = "My Purse"
+        }
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {

@@ -55,6 +55,9 @@ class HelpVC: UIViewController,SFSafariViewControllerDelegate,MFMailComposeViewC
         if Theme.appName == "VRAJEV Charge"{
             self.titleBar.title = "Contact Us"
         }
+        if Theme.appName == "EV Plugin Charge"{
+            self.titleBar.title = "Support"
+        }
         if Theme.appName != "V-Power"{
             self.lblTiming.isHidden = true
         }

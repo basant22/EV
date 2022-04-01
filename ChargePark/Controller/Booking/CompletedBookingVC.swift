@@ -64,6 +64,7 @@ class CompletedBookingVC: UIViewController {
             DispatchQueue.main.async {
                 let url = URL(string: urlString)
                 let pdfData = try? Data.init(contentsOf: url!)
+               
                 let resourceDocPath = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last! as URL
                 let pdfNameFromUrl = "\(appN)-\(fileName).pdf"
                 let actualPath = resourceDocPath.appendingPathComponent(pdfNameFromUrl)
@@ -77,6 +78,16 @@ class CompletedBookingVC: UIViewController {
                     print(pdfNameFromUrl)
                     print("pdf successfully saved!")
                     DispatchQueue.main.async {
+                   
+
+//                    let activityViewController = UIActivityViewController(activityItems: [actualPath], applicationActivities: nil)
+//
+//                    activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+//                        // exclude some activity types from the list (optional)
+//                    activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+//                    activityViewController.isModalInPresentation = true
+//                                                        // present the view controller
+//                    self.present(activityViewController, animated: true, completion: nil)
                         //self.showSavedPdf(url: actualPath)
                        // self.performSegue(withIdentifier: "invoice", sender: actualPath)
                     }
@@ -136,6 +147,16 @@ extension CompletedBookingVC:UITableViewDelegate,UITableViewDataSource{
             }
             cell.showPdf = { [weak self] pdfurl in
                 DispatchQueue.main.async {
+                   
+                   
+//                    let activityViewController = UIActivityViewController(activityItems: [pdfurl], applicationActivities: nil)
+//
+//                    activityViewController.popoverPresentationController?.sourceView = self?.view // so that iPads won't crash
+//                        // exclude some activity types from the list (optional)
+//                    activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+//                    activityViewController.isModalInPresentation = true
+//                                                        // present the view controller
+//                    self?.present(activityViewController, animated: true, completion: nil)
                     self?.performSegue(withIdentifier: "invoice", sender: pdfurl)
                 }
             }

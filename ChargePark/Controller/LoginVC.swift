@@ -42,15 +42,23 @@ class LoginVC: UIViewController {
         if userNameFromReg.count > 0{
             txtMobileNumber.text = userNameFromReg
         }
-        if Theme.appName == "VRAJEV Charge"{
+        if Theme.appName == "VRAJEV Charge" || Theme.appName == "EV Plugin Charge"{
             let img = UIImage(systemName: "backward")
+            let imgFor = UIImage(systemName: "forward")
             self.btnBack.setImage(img?.tint(with: .white), for: .normal)
+            self.btnBack.setTitle(" Back", for: .normal)
+            self.btnLogin.setImage(imgFor?.tint(with: .white), for: .normal)
+            self.btnLogin.setTitle(" Login", for: .normal)
         }
         txtMobileNumber.selectedTitleColor = Theme.menuHeaderColor
         txtMobileNumber.selectedLineColor = Theme.menuHeaderColor
         txtPassword.selectedTitleColor = Theme.menuHeaderColor
         txtPassword.selectedLineColor = Theme.menuHeaderColor
         imgLogo.cornerRadius(with: 8.0)
+        if Theme.appName == "EV Plugin Charge"{
+            txtMobileNumber.placeholder = "Login Id"
+            txtPassword.placeholder = "Password"
+        }
 //        txtMobileNumber.text = "9311369543"
 //        txtPassword.text = "Pass@123#"
        // txtMobileNumber.text = "7503103938"

@@ -20,6 +20,7 @@ class MenuViewController: UIViewController {
     var menusVraj = [(#imageLiteral(resourceName: "EV Chargeer"),"Stations","EV Chargers"),(#imageLiteral(resourceName: "My Vehicle"),"Vehicle Info","My Vehicle"),(#imageLiteral(resourceName: "ChargingSession"),"Booking Info","My Bookings"),(#imageLiteral(resourceName: "Wallet"),"My Pocket","My Wallet"),(#imageLiteral(resourceName: "MyProfile"),"My Info","My Profile"),(#imageLiteral(resourceName: "Help"),"Contact","Help"),(#imageLiteral(resourceName: "Logout"),"Exit","Logout")]
     var menusGoGedi = [(#imageLiteral(resourceName: "EV Chargeer"),"Stations","EV Chargers"),(#imageLiteral(resourceName: "Favorite"),"Favourite Stations","Favourite Stations"),(#imageLiteral(resourceName: "My Vehicle"),"Vehicle Info","My Vehicle"),(#imageLiteral(resourceName: "ChargingSession"),"My Bookings","My Bookings"),(#imageLiteral(resourceName: "Wallet"),"My Wallet","My Wallet"),(#imageLiteral(resourceName: "MyProfile"),"My Profile","My Profile"),(#imageLiteral(resourceName: "Help"),"Contact Us","Help"),(#imageLiteral(resourceName: "Logout"),"Exit","Logout")]
     var menusEVP = [(#imageLiteral(resourceName: "EV Chargeer"),"Stations","EV Chargers"),(#imageLiteral(resourceName: "My Vehicle"),"My Vehicles","My Vehicle"),(#imageLiteral(resourceName: "ChargingSession"),"My Bookings","My Bookings"),(#imageLiteral(resourceName: "Wallet"),"My Wallet","My Wallet"),(#imageLiteral(resourceName: "MyProfile"),"My Profile","My Profile"),(#imageLiteral(resourceName: "Rfid"),"RFID Card","Rfid"),(#imageLiteral(resourceName: "Help"),"Help","Help"),(#imageLiteral(resourceName: "Logout"),"Exit","Logout")]
+    var menusE = [(#imageLiteral(resourceName: "EV Chargeer"),"Power Source ","EV Chargers"),(#imageLiteral(resourceName: "My Vehicle"),"Vehicle Brand","My Vehicle"),(#imageLiteral(resourceName: "ChargingSession"),"Bookings","My Bookings"),(#imageLiteral(resourceName: "Wallet"),"My Purse","My Wallet"),(#imageLiteral(resourceName: "MyProfile"),"My Info","My Profile"),(#imageLiteral(resourceName: "Rfid"),"RFID Card","Rfid"),(#imageLiteral(resourceName: "Help"),"Support","Help"),(#imageLiteral(resourceName: "Logout"),"Exit Here","Logout")]
    // (#imageLiteral(resourceName: "Rfid"),"My RFID","Rfid")
     //(#imageLiteral(resourceName: "Rfid"),"My RFID","Rfid")
     override func viewDidLoad() {
@@ -29,7 +30,9 @@ class MenuViewController: UIViewController {
             self.menus = self.menusVraj
         }else if Theme.appName == "GoGedi"{
             self.menus = self.menusGoGedi
-        }else if Theme.appName == "EV Plugin Charge" || Theme.appName == "StartEVCharge"{
+        }else if Theme.appName == "EV Plugin Charge"{
+            self.menus = self.menusE
+        }else if Theme.appName == "StartEVCharge"{
             self.menus = self.menusEVP
         }
          tableView.registerNibs(nibNames:["MenuCell","HeadingCell"])

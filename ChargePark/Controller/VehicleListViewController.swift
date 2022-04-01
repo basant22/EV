@@ -38,6 +38,9 @@ class VehicleListViewController: UIViewController {
         if Theme.appName == "VRAJEV Charge"{
             self.titleBar.title = "Vehicles Info"
         }
+        if Theme.appName == "EV Plugin Charge"{
+            self.titleBar.title = "Vehicle Report"
+        }
     }
     
    fileprivate func loadUserAddedVehicles(){

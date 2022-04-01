@@ -63,6 +63,9 @@ class StationViewController: UIViewController{
         if Theme.appName == "VRAJEV Charge"{
             self.titleBar.title = "Nearby Stations"
         }
+        if Theme.appName == "EV Plugin Charge"{
+            self.titleBar.title = "Power Source"
+        }
         searchButton.isEnabled = true
         searchButton.action = #selector(autocompleteClicked(_:))
         if  self.revealViewController() != nil{

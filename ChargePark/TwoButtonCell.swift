@@ -18,6 +18,10 @@ class TwoButtonCell: UITableViewCell {
         btnGuest.cornerRadius(with: 4)
         btnLogin.setTitle("User Login", for: .normal)
         btnGuest.setTitle("Continue As Guest", for: .normal)
+        if Theme.appName == "EV Plugin Charge"{
+            btnLogin.setTitle("Login", for: .normal)
+            btnGuest.setTitle("Guest User", for: .normal)
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
