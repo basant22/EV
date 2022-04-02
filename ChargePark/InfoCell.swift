@@ -33,7 +33,7 @@ class InfoCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func setData()  {
-        if let defaul = Defaults.shared.userLogin,let user = defaul.username{
+        if let defaul = Defaults.shared.userLogin,let user = defaul.name{
             lblName.text = user.count > 0 ? user : "Guest User"
         }
         

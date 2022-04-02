@@ -60,61 +60,125 @@ extension ProfileVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 1
+            if Theme.appName == "EV Plugin Charge" {
+                return titlesAndValue.count
+            }else{
+                return 1
+            }
         default:
-            return titlesAndValue.count
+            if Theme.appName == "EV Plugin Charge" {
+                return 1
+            }else{
+                return titlesAndValue.count
+            }
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath) as! InfoCell
-            return cell
+            if Theme.appName == "EV Plugin Charge" {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "PersonalInfoCell", for: indexPath) as! PersonalInfoCell
+                return cell
+            }else{
+                let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath) as! InfoCell
+                return cell
+            }
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath) as! InfoCell
+//            return cell
         default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PersonalInfoCell", for: indexPath) as! PersonalInfoCell
-            return cell
+            if Theme.appName == "EV Plugin Charge" {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath) as! InfoCell
+                return cell
+                
+            }else{
+                let cell = tableView.dequeueReusableCell(withIdentifier: "PersonalInfoCell", for: indexPath) as! PersonalInfoCell
+                return cell
+            }
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "PersonalInfoCell", for: indexPath) as! PersonalInfoCell
+//            return cell
         }
     
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         switch indexPath.section {
         case 0:
-            let cell = cell as! InfoCell
-            cell.setData()
+            if Theme.appName == "EV Plugin Charge" {
+                let cell = cell as! PersonalInfoCell
+                //cell.setPersonalInfo()
+                cell.lblTitle.text = titlesAndValue[indexPath.row].0
+                cell.lblValue.text = titlesAndValue[indexPath.row].1
+            }else{
+                let cell = cell as! InfoCell
+                cell.setData()
+            }
+          
         default:
-            let cell = cell as! PersonalInfoCell
-            //cell.setPersonalInfo()
-            cell.lblTitle.text = titlesAndValue[indexPath.row].0
-            cell.lblValue.text = titlesAndValue[indexPath.row].1
+            if Theme.appName == "EV Plugin Charge" {
+                let cell = cell as! InfoCell
+                cell.setData()
+            }else{
+                let cell = cell as! PersonalInfoCell
+                //cell.setPersonalInfo()
+                cell.lblTitle.text = titlesAndValue[indexPath.row].0
+                cell.lblValue.text = titlesAndValue[indexPath.row].1
+            }
            // cell.layoutIfNeeded()
         }
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         switch section {
         case 1:
-            let headervw = UIView(frame: CGRect(x: 10, y: 10, width: 180, height: 30))
-            let lbl = UILabel(frame: CGRect(x: 10, y: 0, width: 300, height: 30))
-            lbl.text = "Personal information"
-            lbl.font = UIFont.systemFont(ofSize: 20.0)
-                //UIFont(name: "HelveticaNeue-Medium", size: 20.0)
-            lbl.textColor = Theme.menuHeaderColor
-            let img = UIImageView(frame: CGRect(x:headervw.bounds.width + 14, y:3, width: 22, height: 22))
-            img.image = #imageLiteral(resourceName: "Pencil").tint(with: Theme.menuHeaderColor)
-            headervw.addSubview(lbl)
-            headervw.addSubview(img)
-            return headervw
+            if Theme.appName == "EV Plugin Charge" {
+                return UIView()
+            }else{
+                let headervw = UIView(frame: CGRect(x: 10, y: 10, width: 180, height: 30))
+                let lbl = UILabel(frame: CGRect(x: 10, y: 0, width: 300, height: 30))
+                lbl.text = "Personal information"
+                lbl.font = UIFont.systemFont(ofSize: 20.0)
+                    //UIFont(name: "HelveticaNeue-Medium", size: 20.0)
+                lbl.textColor = Theme.menuHeaderColor
+                let img = UIImageView(frame: CGRect(x:headervw.bounds.width + 14, y:3, width: 22, height: 22))
+                img.image = #imageLiteral(resourceName: "Pencil").tint(with: Theme.menuHeaderColor)
+                headervw.addSubview(lbl)
+                headervw.addSubview(img)
+                return headervw
+            }
         default:
-            return UIView()
+            if Theme.appName == "EV Plugin Charge" {
+                let headervw = UIView(frame: CGRect(x: 10, y: 10, width: 180, height: 30))
+                let lbl = UILabel(frame: CGRect(x: 10, y: 0, width: 300, height: 30))
+                lbl.text = "Personal information"
+                lbl.font = UIFont.systemFont(ofSize: 20.0)
+                    //UIFont(name: "HelveticaNeue-Medium", size: 20.0)
+                lbl.textColor = Theme.menuHeaderColor
+                let img = UIImageView(frame: CGRect(x:headervw.bounds.width + 14, y:3, width: 22, height: 22))
+                img.image = #imageLiteral(resourceName: "Pencil").tint(with: Theme.menuHeaderColor)
+                headervw.addSubview(lbl)
+                headervw.addSubview(img)
+                return headervw
+            }else{
+                return UIView()
+            }
+           
         }
         
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
         case 1:
-            return 40
+            if Theme.appName == "EV Plugin Charge" {
+                return 0
+            }else{
+                return 40
+            }
+           
         default:
-            return 0
+            if Theme.appName == "EV Plugin Charge" {
+                return 40
+            }else{
+                return 0
+            }
         }
     }
 //    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -123,9 +187,18 @@ extension ProfileVC:UITableViewDelegate,UITableViewDataSource{
 
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             if indexPath.section == 0{
-                return 210
+                if Theme.appName == "EV Plugin Charge" {
+                    return 77
+                }else{
+                    return 210
+                }
+               
             }else if indexPath.section == 1{
-                return 77
+                if Theme.appName == "EV Plugin Charge" {
+                    return 210
+                }else{
+                    return 77
+                }
             }
             return 0
            // return UITableView.automaticDimension

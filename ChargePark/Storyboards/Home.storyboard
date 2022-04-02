@@ -106,7 +106,7 @@
                                 </items>
                             </navigationBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HelpLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2xG-3u-XPg">
-                                <rect key="frame" x="0.0" y="87.999999999999986" width="414" height="220.66666666666663"/>
+                                <rect key="frame" x="27" y="87.999999999999986" width="360" height="220.66666666666663"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vidyuthpower" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efp-Sw-Wgm">
                                 <rect key="frame" x="145.66666666666666" y="313.66666666666669" width="122.99999999999997" height="24"/>
@@ -306,13 +306,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jlA-w4-UIU" firstAttribute="centerX" secondItem="E3a-Zg-PHB" secondAttribute="centerX" id="0MB-iG-aoF"/>
+                            <constraint firstItem="2xG-3u-XPg" firstAttribute="centerX" secondItem="E3a-Zg-PHB" secondAttribute="centerX" id="0pM-SK-B27"/>
                             <constraint firstItem="y64-FY-jNK" firstAttribute="top" secondItem="YJU-ub-liF" secondAttribute="bottom" constant="5" id="7DR-o6-d9f"/>
                             <constraint firstItem="jlA-w4-UIU" firstAttribute="width" secondItem="E3a-Zg-PHB" secondAttribute="width" multiplier="0.773333" id="96S-70-iPM"/>
-                            <constraint firstItem="2xG-3u-XPg" firstAttribute="leading" secondItem="2JZ-PJ-ZYM" secondAttribute="leading" id="Cjy-Ir-FEu"/>
                             <constraint firstItem="L4J-l4-Uqa" firstAttribute="top" secondItem="2JZ-PJ-ZYM" secondAttribute="top" id="Hvu-Jf-S8W"/>
                             <constraint firstItem="2xG-3u-XPg" firstAttribute="top" secondItem="L4J-l4-Uqa" secondAttribute="bottom" id="OjR-ht-g6s"/>
                             <constraint firstItem="2xG-3u-XPg" firstAttribute="height" secondItem="E3a-Zg-PHB" secondAttribute="height" multiplier="0.3" id="RXj-yb-IYf"/>
-                            <constraint firstItem="2xG-3u-XPg" firstAttribute="trailing" secondItem="2JZ-PJ-ZYM" secondAttribute="trailing" id="SXk-yh-Fij"/>
                             <constraint firstItem="Efp-Sw-Wgm" firstAttribute="centerX" secondItem="E3a-Zg-PHB" secondAttribute="centerX" id="Wyw-Yu-xnW"/>
                             <constraint firstItem="jlA-w4-UIU" firstAttribute="top" secondItem="y64-FY-jNK" secondAttribute="bottom" constant="15" id="XcE-Fr-7y9"/>
                             <constraint firstItem="YJU-ub-liF" firstAttribute="centerX" secondItem="E3a-Zg-PHB" secondAttribute="centerX" id="a9O-Q0-UBL"/>
@@ -322,6 +321,7 @@
                             <constraint firstItem="L4J-l4-Uqa" firstAttribute="leading" secondItem="2JZ-PJ-ZYM" secondAttribute="leading" id="n99-8m-Yab"/>
                             <constraint firstItem="jlA-w4-UIU" firstAttribute="height" secondItem="E3a-Zg-PHB" secondAttribute="height" multiplier="0.3" id="pWE-WO-mej"/>
                             <constraint firstItem="y64-FY-jNK" firstAttribute="centerX" secondItem="E3a-Zg-PHB" secondAttribute="centerX" id="tb1-ja-GUw"/>
+                            <constraint firstItem="2xG-3u-XPg" firstAttribute="width" secondItem="E3a-Zg-PHB" secondAttribute="width" multiplier="0.869404" id="vLF-er-nln"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jFR-nL-j4e"/>
@@ -855,7 +855,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Od-le-4Cn">
-                                <rect key="frame" x="0.0" y="158" width="414" height="528"/>
+                                <rect key="frame" x="0.0" y="158" width="414" height="479"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Ldo-QM-a7h" id="lw3-6c-yP7"/>
@@ -863,7 +863,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUJ-sS-msr">
-                                <rect key="frame" x="0.0" y="686" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="637" width="414" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CR-iV-JmO">
                                         <rect key="frame" x="355" y="0.0" width="44" height="44"/>
@@ -1719,8 +1719,8 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="HOW-ZT-Rqh"/>
-        <segue reference="eqU-lC-ejI"/>
-        <segue reference="IiX-kJ-0IJ"/>
+        <segue reference="PzY-uc-7hm"/>
+        <segue reference="Fss-ao-lVc"/>
         <segue reference="Fpe-4o-sI9"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1730,7 +1730,7 @@
         <image name="HelpLogo" width="194.33332824707031" height="120"/>
         <image name="Mobile" width="16.666666030883789" height="16.666666030883789"/>
         <image name="Placeholder" width="16.666666030883789" height="16.666666030883789"/>
-        <image name="QRCode" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="QRCode" width="31.333333969116211" height="31.333333969116211"/>
         <image name="Website" width="16.666666030883789" height="16.666666030883789"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="heart" catalog="system" width="128" height="109"/>

@@ -47,7 +47,9 @@ class AddToFavoriteVC: UIViewController {
     func setTheme(){
         let imgClose = UIImage(systemName: "xmark")?.tint(with: Theme.menuHeaderColor)
         let imgFav = UIImage(systemName: "heart")?.tint(with: .white)
+        let imgFa = UIImage(systemName: "plus.circle")?.tint(with: .white)
         let imgProc = UIImage(systemName: "arrow.right")?.tint(with: .white)
+        let imgPro = UIImage(systemName: "forward")?.tint(with: .white)
         
         self.btnClose.setImage(imgClose, for: .normal)
         self.btnProceed.setImage(imgProc, for: .normal)
@@ -56,6 +58,13 @@ class AddToFavoriteVC: UIViewController {
         self.btnClose.setTitle("", for: .normal)
         self.btnProceed.setTitle(" Proceed", for: .normal)
         self.btnAddToFav.setTitle(" Add To Favourite", for: .normal)
+        if Theme.appName == "EV Plugin Charge" {
+            self.btnAddToFav.setImage(imgFa, for: .normal)
+            self.btnProceed.setImage(imgPro, for: .normal)
+            self.btnProceed.setTitle(" Next", for: .normal)
+            self.btnAddToFav.setTitle(" Favourite", for: .normal)
+        }
+    
         
         viewBase.cornerRadius(with: 8.0)
         viewBase.backgroundColor = Theme.menuHeaderColor

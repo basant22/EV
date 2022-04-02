@@ -62,6 +62,10 @@ class HelpVC: UIViewController,SFSafariViewControllerDelegate,MFMailComposeViewC
             self.lblTiming.isHidden = true
         }
         imgHelp.image = #imageLiteral(resourceName: "HelpLogo")
+        if Theme.appName == "EV Plugin Charge"{
+            self.titleBar.title = "Support"
+            imgHelp.image = #imageLiteral(resourceName: "HelpLo").tint(with: Theme.menuHeaderColor)
+                    }
         lblHelp.text = "Welcome to Help and Support"
         lblHelp.textColor = Theme.menuHeaderColor
         lblName.text = Theme.appName
@@ -100,19 +104,15 @@ class HelpVC: UIViewController,SFSafariViewControllerDelegate,MFMailComposeViewC
                 controller.dismiss(animated: true, completion: nil)
             }
     @IBAction func btnCallTo(_ sender: UIButton) {
-      
-            if let url = URL(string: "tel://\(Theme.HelpMobileNumber)"),
-                   UIApplication.shared.canOpenURL(url) {
-                   UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        
+        if let url = URL(string: "tel://\(Theme.HelpMobileNumber)"),
+           UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
     @IBAction func btnCallNew(_ sender: UIButton) {
-      
-            if let url = URL(string: "tel://\(Theme.HelpMobileNumberNew)"),
-                   UIApplication.shared.canOpenURL(url) {
-                   UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        
+    if let url = URL(string: "tel://\(Theme.HelpMobileNumberNew)"),
+        UIApplication.shared.canOpenURL(url) {
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
     @IBAction func btnEmail(_ sender: UIButton) {

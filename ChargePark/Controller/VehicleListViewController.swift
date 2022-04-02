@@ -39,7 +39,7 @@ class VehicleListViewController: UIViewController {
             self.titleBar.title = "Vehicles Info"
         }
         if Theme.appName == "EV Plugin Charge"{
-            self.titleBar.title = "Vehicle Report"
+            self.titleBar.title = "Vehicle Brand"
         }
     }
     
