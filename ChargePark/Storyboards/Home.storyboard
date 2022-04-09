@@ -817,15 +817,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zt-i4-ke5">
                                 <rect key="frame" x="0.0" y="88" width="414" height="70"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjK-OR-6wu">
-                                        <rect key="frame" x="183" y="5" width="48" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjK-OR-6wu">
+                                        <rect key="frame" x="207" y="5" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCh-id-ZLD">
-                                        <rect key="frame" x="186.66666666666666" y="32" width="41" height="20.666666666666671"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jCh-id-ZLD">
+                                        <rect key="frame" x="3" y="8" width="408" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -851,6 +851,8 @@
                                     <constraint firstItem="EjK-OR-6wu" firstAttribute="centerX" secondItem="9zt-i4-ke5" secondAttribute="centerX" id="VC0-i1-TQe"/>
                                     <constraint firstAttribute="trailing" secondItem="sT9-rE-EUq" secondAttribute="trailing" constant="11" id="df8-hP-LKE"/>
                                     <constraint firstItem="jCh-id-ZLD" firstAttribute="top" secondItem="EjK-OR-6wu" secondAttribute="bottom" constant="3" id="k3c-gy-ARd"/>
+                                    <constraint firstItem="jCh-id-ZLD" firstAttribute="leading" secondItem="9zt-i4-ke5" secondAttribute="leading" constant="3" id="lQV-pT-kCg"/>
+                                    <constraint firstAttribute="trailing" secondItem="jCh-id-ZLD" secondAttribute="trailing" constant="3" id="sbr-lP-vIo"/>
                                     <constraint firstItem="sT9-rE-EUq" firstAttribute="centerY" secondItem="9zt-i4-ke5" secondAttribute="centerY" id="zKt-8G-VQ3"/>
                                 </constraints>
                             </view>
@@ -1056,7 +1058,7 @@
             <objects>
                 <viewController storyboardIdentifier="AddToFavoriteVC" id="9fE-Sl-7O2" customClass="AddToFavoriteVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="940-gN-wWs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qk4-Zl-o0u">
@@ -1719,7 +1721,7 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="HOW-ZT-Rqh"/>
-        <segue reference="PzY-uc-7hm"/>
+        <segue reference="eqU-lC-ejI"/>
         <segue reference="Fss-ao-lVc"/>
         <segue reference="Fpe-4o-sI9"/>
     </inferredMetricsTieBreakers>

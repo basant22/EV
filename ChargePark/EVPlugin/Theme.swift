@@ -57,7 +57,7 @@ struct Theme {
     static let RazorImage = "https://gogedi.com/wp-content/themes/electric/assets/images/logo-final.png"
     //Payment vc Titles
     static let Name_Title = " Name: "
-    static let Invoice_Id = " Invoice Id:"
+    static let Invoice_Id = " Invoice Id: "
     static let Rate_Title = " Rate Title: "
     static let Sub_Total = " Sub Total:"
     static let Other_Charges = " Other Charges: "
@@ -65,7 +65,7 @@ struct Theme {
     static let Total_Payable = " Total Payable: "
     
     static let Charging_Status = " Charging Status:"
-    static let Load = " Load:"
+    static let Load = " Load: "
     static let Charging =  " Charging"
     static let LoginInfo = "Login_Info"
     static let ProfileInfo = "Profile_Info"

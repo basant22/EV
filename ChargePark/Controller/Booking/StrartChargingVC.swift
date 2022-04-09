@@ -218,16 +218,17 @@ class StrartChargingVC: UIViewController {
     func callWhenChargerIsStarted(){
        
         DispatchQueue.main.async {
-            self.getStatusWhileChargingVehicle()
+            self.getStatusWhileChargingVehicle(transactionStatus: Theme.Start_Transaction)
 //            Timer.scheduledTimer(withTimeInterval: 30.0, repeats: true, block: { [weak self] _ in
 //                self?.getStatusWhileChargingVehicle()
 //            })
-            self.startStatusTimer()
+           // self.startStatusTimer()
             if MyGlobalTimer.sharedTimer.duration.2 == 0 {
                 MyGlobalTimer.sharedTimer.startTimer()
             }else{
                 self.duration = MyGlobalTimer.sharedTimer.duration
                 self.counter = MyGlobalTimer.sharedTimer.counter
+                //self.updateCounter()
             }
             self.countDuration()
         }
@@ -334,7 +335,7 @@ class StrartChargingVC: UIViewController {
     let seconds = Int(time) % 60
     return  String(format: "%02d:%02d:%02d", hours, minutes, seconds)
     }*/
-    
+    // MARK: - Button Start/Stop/Payment
     @IBAction func btnStart(_ sender:UIButton){
        // self.performSegue(withIdentifier: "Payment", sender: nil)
         if btnStart.titleLabel?.text == Theme.Start_Charging {
@@ -345,6 +346,8 @@ class StrartChargingVC: UIViewController {
             if let result = resultBooing {
                 self.goToStartPayment(result:result)
             }
+        }else if btnStart.titleLabel?.text == "Charger Stopped" {
+            getStatusWhileChargingVehicle(transactionStatus: "")
         }else{
             changeTitleAndTarget(title: Theme.Start_Charging)
         }
@@ -408,6 +411,9 @@ class StrartChargingVC: UIViewController {
             }
         }
     }
+    // MARK: - START OR STOP TRANSACTION
+    
+    
     func startOrStopCharging(req:StartChargingRequest,status:String,title:String){
         let res = StartChargingResource()
         self.showLoader()
@@ -416,64 +422,53 @@ class StrartChargingVC: UIViewController {
                 self?.hideLoader()
                 if status == Theme.Start_Transaction && succes == true  {
                     DispatchQueue.main.async {
-                        self?.titleToStop(SetTitle:Theme.Stop_Charging)
+                        //self?.titleToStop(SetTitle:Theme.Stop_Charging)
                         MyGlobalTimer.sharedTimer.startTimer()
-                        self?.countDuration {
-                        self?.getStatusWhileChargingVehicle()
-                        }
+                        self?.countDuration()
 //                        Timer.scheduledTimer(withTimeInterval: 30.0, repeats: true, block: { [weak self] _ in
 //                            self?.getStatusWhileChargingVehicle()
 //                        })
-                        if let self = self{
+                        /*if let self = self{
                             self.startStatusTimer()
-                        }
+                        }*/
                     }
                 }else if status == Theme.Stop_Transaction && succes == true{
-                    if self?.timer != nil {
-                        self?.timer.invalidate()
-                        self?.timer = nil
-                    }
-                    MyGlobalTimer.sharedTimer.stopTimer()
                     if self?.timerD != nil {
                         self?.timerD.invalidate()
                         self?.timerD = nil
                     }
-                   
+//                    if self?.timer != nil {
+//                        self?.timer.invalidate()
+//                        self?.timer = nil
+//                    }
+                    MyGlobalTimer.sharedTimer.stopTimer()
                     Defaults.shared.bookingType = .General
-                    DispatchQueue.main.async {
-                       // self?.btnStart.isUserInteractionEnabled = false
-                       
-//                        Timer.scheduledTimer(timeInterval: 30.0, target: self, selector: #selector(self?.getStatusWhileChargingVehicle), userInfo: nil, repeats: false)
-                       // self?.getStatusWhileChargingVehicle()
-                      // self?.progress.progress = (self?.progress.progress)!
-                      //  self?.displayAlert(alertMessage: "Charging has been stopped")
-                    }
-                    let seconds = 3.0
+                    let seconds = 5.0
                     DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-                        self?.getStatusWhileChargingVehicle()
+                        self?.getStatusWhileChargingVehicle(transactionStatus: Theme.Stop_Transaction)
                     }
-                   
                 }else if status == Theme.Start_Transaction && succes == false {
                     DispatchQueue.main.async {
                         self?.displayAlert(alertMessage: Theme.Charger_Not_Started)
                     }
                 }
             }else{
-                DispatchQueue.main.async {
+                /*DispatchQueue.main.async {
                     if status == Theme.Start_Transaction{
                         self?.titleToStop(SetTitle:Theme.Stop_Charging)
                     }else if status == Theme.Stop_Transaction{
                         self?.titleToStart()
                     }
+                }*/
                 self?.hideLoader()
-                }
             }
         }
     }
+    // MARK: - CallFor_StartCharging_OnActiveBooking
     func callFor_StartCharging_OnActiveBooking(result:ResultChargerBooking ,status:String,title:String) {
-        if let chargerId = result.chargerName,let portNumber = result.chargingpoint{
+        if let chargerId = result.chargerName,let portNumber = result.chargingpoint,let bkId = result.bookingID{
             let validate = validateStartChargingRequest()
-            let req = StartChargingRequest(chargingpoint:String(portNumber), fromStatus: Theme.AVAILABLE, deviceId: chargerId, requestStatus: status)
+            let req = StartChargingRequest(chargingpoint:String(portNumber), fromStatus: Theme.AVAILABLE, deviceId: chargerId, requestStatus: status,bookingId: String(bkId))
             let result =  validate.validate(request: req)
               if result.success {
                   self.startOrStopCharging(req: req, status: status, title: title)
@@ -485,9 +480,9 @@ class StrartChargingVC: UIViewController {
         }
     }
     func callForStartCharging(status:String,title:String) {
-        if let charger =  selectedStation?.charger,let chargerId = charger.chargerName,let portNumber = selectedStation?.chargingpoint{
+        if let charger =  selectedStation?.charger,let chargerId = charger.chargerName,let portNumber = selectedStation?.chargingpoint,let bkId = bookingResult.bookingID {
             let validate = validateStartChargingRequest()
-            let req = StartChargingRequest(chargingpoint:String(portNumber), fromStatus: Theme.AVAILABLE, deviceId: chargerId, requestStatus: status)
+            let req = StartChargingRequest(chargingpoint:String(portNumber), fromStatus: Theme.AVAILABLE, deviceId: chargerId, requestStatus: status,bookingId: String(bkId))
           let result =  validate.validate(request: req)
             if result.success {
                 self.startOrStopCharging(req: req, status: status, title: title)
@@ -496,11 +491,8 @@ class StrartChargingVC: UIViewController {
             }
         }
     }
-    
+  // MARK: -  START TIMER AND CALL CHANGE_STATUS API
     func countDuration(completion:(()->())? = nil){
-//        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [weak self] _ in
-//            self?.updateCounter()
-//        })
         self.timerD = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
         completion?()
     }
@@ -521,21 +513,29 @@ class StrartChargingVC: UIViewController {
                 self.duration.1 = 0
             }
         }
+        self.getStatusWhileChargingVehicle(transactionStatus: Theme.Start_Transaction)
     }
     
     func handleProgressBar(){
         DispatchQueue.main.async{
-        self.progress.progress += 0.01
-        }
+       // if let status = self.resultBooing?.status,status == "R"{
+            self.progress.progress += 0.01
+            if self.progress.progress >= 1.0 {
+                self.progress.progress = 0.0
+            }
+           }
+        //}
     }
-    @objc func getStatusWhileChargingVehicle() {
+   // MARK: - Get_Status_While_Charging_Vehicle
+    @objc func getStatusWhileChargingVehicle(transactionStatus:String)  {
       //  let res = AfterStartChargingResource()
         if let bookingID = bookingResult.bookingID {
             let bookId = String(bookingID)
-            handleProgressBar()
+           
             ApiGetRequest().kindOf(Theme.ChargerStatus, requestFor: .CHANGE_CHARGER_STATUS, queryString: [bookId], response: BookingStatus.self) {[weak self] (respons)  in
                 if let res = respons,let result = res.result,let status = result.status ,let msg = res.message,let _ = res.success{
                     if msg == "Ok"  {
+                        self?.handleProgressBar()
                         if result.chargingstatus == "I"{
                             self?.titleToStop(SetTitle:"Cancel Booking")
                         }else  if result.chargingstatus == "R"{
@@ -548,10 +548,10 @@ class StrartChargingVC: UIViewController {
                             self?.bookingType = .General
                             Defaults.shared.bookingType = .General
                             self?.status = status
-                            if self?.timer != nil {
-                                self?.timer.invalidate()
-                                self?.timer = nil
-                            }
+//                            if self?.timer != nil {
+//                                self?.timer.invalidate()
+//                                self?.timer = nil
+//                            }
                             MyGlobalTimer.sharedTimer.stopTimer()
                             if self?.timerD != nil {
                                 self?.timerD.invalidate()
@@ -560,6 +560,7 @@ class StrartChargingVC: UIViewController {
                             self?.progress.progress = 1.0
                             }
                             self?.titleToStop(SetTitle:"Payment Detail")
+                            self?.hideLoader()
                         }else if status == "F" {
                             self?.btnBack.isEnabled = true
                             self?.bookingType = .General
@@ -575,6 +576,7 @@ class StrartChargingVC: UIViewController {
                             }
                         }
                         else if status == "R" {
+                            
                                 DispatchQueue.main.async {
                                     if let conn = result.eVConnected {
                                         if conn == 0 {
@@ -612,9 +614,17 @@ class StrartChargingVC: UIViewController {
                                         self?.btnBack.isEnabled = true
                                     default:
                                         print("")
-                                    }
+                                     }
                                     }
                                 }
+                            if transactionStatus == Theme.Stop_Transaction {
+                                let seconds = 3.0
+                                DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                                    self?.getStatusWhileChargingVehicle(transactionStatus: "")
+                                }
+                            }else if( transactionStatus == ""){
+                                self?.titleToStop(SetTitle: "Charger Stopped")
+                            }
 //                                    if self?.countRunningStatus == 1 {
 //                                        if let ressult = self?.bookingResult,let  chargerStatus = ressult.status,chargerStatus == "S" {
 //                                            self?.hideButtonForAMinute()

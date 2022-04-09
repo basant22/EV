@@ -13,7 +13,7 @@
         <!--Amount-->
         <scene sceneID="bL9-Vb-rvx">
             <objects>
-                <viewController storyboardIdentifier="AmountVC" id="WQR-nd-vGt" customClass="AmountVC" customModule="EV_Plugin_Charge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AmountVC" id="WQR-nd-vGt" customClass="AmountVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jBy-Cd-7XK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,7 +150,7 @@
         <!--Time-->
         <scene sceneID="qh1-bG-2ct">
             <objects>
-                <viewController storyboardIdentifier="TimeVC" id="FlJ-Mv-kmC" customClass="TimeVC" customModule="EV_Plugin_Charge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimeVC" id="FlJ-Mv-kmC" customClass="TimeVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnb-A3-qTR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -288,7 +288,7 @@
         <!--Unit-->
         <scene sceneID="n6x-1f-bvg">
             <objects>
-                <viewController storyboardIdentifier="UnitVC" id="GBR-d1-QmI" customClass="UnitVC" customModule="EV_Plugin_Charge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UnitVC" id="GBR-d1-QmI" customClass="UnitVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g6C-Il-yzu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -434,7 +434,7 @@
         <!--Uta Tab Controller-->
         <scene sceneID="tC0-AV-odv">
             <objects>
-                <tabBarController id="zTP-Bo-RIP" customClass="UtaTabController" customModule="EV_Plugin_Charge" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="zTP-Bo-RIP" customClass="UtaTabController" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8vS-zE-8oI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -454,7 +454,7 @@
         <!--SOC-->
         <scene sceneID="pPd-7a-Z4s">
             <objects>
-                <viewController storyboardIdentifier="SocVC" id="tik-Zv-siC" customClass="SocVC" customModule="EV_Plugin_Charge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SocVC" id="tik-Zv-siC" customClass="SocVC" customModule="ChargePark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mgi-db-PnK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

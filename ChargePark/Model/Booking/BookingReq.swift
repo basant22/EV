@@ -511,7 +511,7 @@ struct validateAddedVehicle {
 // pragma Start Charging
 struct StartChargingRequest:Encodable {
     var chargingpoint:String?
-    var fromStatus,deviceId,requestStatus:String?
+    var fromStatus,deviceId,requestStatus,bookingId:String?
     // {"fromStatus":"Available","chargingpoint":1,"deviceId":"HPXIN008","requestStatus":"StartTransaction"}
 }
 struct validateStartChargingRequest{

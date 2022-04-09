@@ -317,6 +317,30 @@
 		1832D88626F865780034BDE4 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832D88426F865780034BDE4 /* InfoCell.xib */; };
 		1832D88926F868F70034BDE4 /* PersonalInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832D88726F868F70034BDE4 /* PersonalInfoCell.swift */; };
 		1832D88A26F868F70034BDE4 /* PersonalInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832D88826F868F70034BDE4 /* PersonalInfoCell.xib */; };
+		183DC6E327FC9B440065D466 /* UnitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4527EA2A6600C9FF9F /* UnitVC.swift */; };
+		183DC6E427FC9B450065D466 /* UnitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4527EA2A6600C9FF9F /* UnitVC.swift */; };
+		183DC6E527FC9B460065D466 /* UnitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4527EA2A6600C9FF9F /* UnitVC.swift */; };
+		183DC6E627FC9B490065D466 /* UtaTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4627EA2A6600C9FF9F /* UtaTabController.swift */; };
+		183DC6E727FC9B490065D466 /* UtaTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4627EA2A6600C9FF9F /* UtaTabController.swift */; };
+		183DC6E827FC9B4A0065D466 /* UtaTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4627EA2A6600C9FF9F /* UtaTabController.swift */; };
+		183DC6E927FC9B4B0065D466 /* UtaTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4627EA2A6600C9FF9F /* UtaTabController.swift */; };
+		183DC6EA27FC9B4F0065D466 /* UnitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4527EA2A6600C9FF9F /* UnitVC.swift */; };
+		183DC6EB27FC9B520065D466 /* AmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4727EA2A6600C9FF9F /* AmountVC.swift */; };
+		183DC6EC27FC9B530065D466 /* AmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4727EA2A6600C9FF9F /* AmountVC.swift */; };
+		183DC6ED27FC9B530065D466 /* AmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4727EA2A6600C9FF9F /* AmountVC.swift */; };
+		183DC6EE27FC9B540065D466 /* AmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4727EA2A6600C9FF9F /* AmountVC.swift */; };
+		183DC6EF27FC9B570065D466 /* TimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4827EA2A6600C9FF9F /* TimeVC.swift */; };
+		183DC6F027FC9B580065D466 /* TimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4827EA2A6600C9FF9F /* TimeVC.swift */; };
+		183DC6F127FC9B590065D466 /* TimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4827EA2A6600C9FF9F /* TimeVC.swift */; };
+		183DC6F227FC9B590065D466 /* TimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A34A4827EA2A6600C9FF9F /* TimeVC.swift */; };
+		183DC6F327FC9B5C0065D466 /* SocVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856C5D927EB666D002F9754 /* SocVC.swift */; };
+		183DC6F427FC9B5D0065D466 /* SocVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856C5D927EB666D002F9754 /* SocVC.swift */; };
+		183DC6F527FC9B5E0065D466 /* SocVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856C5D927EB666D002F9754 /* SocVC.swift */; };
+		183DC6F627FC9B5F0065D466 /* SocVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856C5D927EB666D002F9754 /* SocVC.swift */; };
+		183DC6F727FC9BB10065D466 /* ChargeByUTA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A34A4D27EA2A7F00C9FF9F /* ChargeByUTA.storyboard */; };
+		183DC6F827FC9BB20065D466 /* ChargeByUTA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A34A4D27EA2A7F00C9FF9F /* ChargeByUTA.storyboard */; };
+		183DC6F927FC9BB20065D466 /* ChargeByUTA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A34A4D27EA2A7F00C9FF9F /* ChargeByUTA.storyboard */; };
+		183DC6FA27FC9BB30065D466 /* ChargeByUTA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A34A4D27EA2A7F00C9FF9F /* ChargeByUTA.storyboard */; };
 		183DEECD272559CE005935E8 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183DEECC272559CE005935E8 /* Payment.storyboard */; };
 		183DEECE272559CE005935E8 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183DEECC272559CE005935E8 /* Payment.storyboard */; };
 		183DEED027255A2B005935E8 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DEECF27255A2B005935E8 /* PaymentVC.swift */; };
@@ -1954,6 +1978,7 @@
 				1803505D27182DFE00CCAED9 /* UpperImageCell.xib in Resources */,
 				18CAE93C277DACAA0087B0EF /* TimeSlot.storyboard in Resources */,
 				18DFBC27273851120072F2EC /* ChargePark-Info.plist in Resources */,
+				183DC6F927FC9BB20065D466 /* ChargeByUTA.storyboard in Resources */,
 				18FDE818271951E500A7438E /* NewTextCell.xib in Resources */,
 				1803505F27182DFE00CCAED9 /* EmptyCellCell.xib in Resources */,
 				1803506127182DFE00CCAED9 /* ButtonCell.xib in Resources */,
@@ -2050,6 +2075,7 @@
 				18686A5F274CFE70005D2DC6 /* Payment.storyboard in Resources */,
 				18686A60274CFE70005D2DC6 /* MyBookingCell.xib in Resources */,
 				18686A86274D0BA9005D2DC6 /* vraj.xcassets in Resources */,
+				183DC6F827FC9BB20065D466 /* ChargeByUTA.storyboard in Resources */,
 				18686A61274CFE70005D2DC6 /* Book.storyboard in Resources */,
 				18686A63274CFE70005D2DC6 /* Main.storyboard in Resources */,
 				18686A64274CFE70005D2DC6 /* PersonalInfoCell.xib in Resources */,
@@ -2081,6 +2107,7 @@
 				18BE00AE2758D35A00E0414D /* HeaderReusableView.xib in Resources */,
 				18CAE93B277DACAA0087B0EF /* TimeSlot.storyboard in Resources */,
 				18ECD802270D9AB200B7BA6C /* EmptyCellCell.xib in Resources */,
+				183DC6FA27FC9BB30065D466 /* ChargeByUTA.storyboard in Resources */,
 				187CBE4B26EF634000C3B611 /* Assets.xcassets in Resources */,
 				18320D6026F0C90200C9DDB4 /* ButtonCell.xib in Resources */,
 				18FF154E26F1DAF900612436 /* TwoButtonCell.xib in Resources */,
@@ -2191,6 +2218,7 @@
 				18CA7F262754D45A0053CD33 /* TextCell.xib in Resources */,
 				18CA7F272754D45A0053CD33 /* Payment.storyboard in Resources */,
 				18CA7F282754D45A0053CD33 /* MyBookingCell.xib in Resources */,
+				183DC6F727FC9BB10065D466 /* ChargeByUTA.storyboard in Resources */,
 				18CA7F292754D45A0053CD33 /* Book.storyboard in Resources */,
 				18CA7F2A2754D45A0053CD33 /* Main.storyboard in Resources */,
 				18A75F3A2754D55D001A45B8 /* Launch Screen.storyboard in Resources */,
@@ -2628,6 +2656,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183DC6F427FC9B5D0065D466 /* SocVC.swift in Sources */,
 				1803501D27182DFE00CCAED9 /* HttpUtility.swift in Sources */,
 				1877F916275930F30052AE80 /* RfidVC.swift in Sources */,
 				180D31A127363DEF00D5726B /* UserEvs+CoreDataClass.swift in Sources */,
@@ -2687,11 +2716,13 @@
 				1803503627182DFE00CCAED9 /* VehicleCell.swift in Sources */,
 				1803503727182DFE00CCAED9 /* HelpVC.swift in Sources */,
 				1803503827182DFE00CCAED9 /* StationsExtension.swift in Sources */,
+				183DC6E827FC9B4A0065D466 /* UtaTabController.swift in Sources */,
 				1803503927182DFE00CCAED9 /* ProfileVC.swift in Sources */,
 				1803503A27182DFE00CCAED9 /* MenuViewController.swift in Sources */,
 				1803503B27182DFE00CCAED9 /* StationDetailViewController.swift in Sources */,
 				18CAE941277DC71A0087B0EF /* TabController.swift in Sources */,
 				1803503C27182DFE00CCAED9 /* ForgetVC.swift in Sources */,
+				183DC6E527FC9B460065D466 /* UnitVC.swift in Sources */,
 				1803503D27182DFE00CCAED9 /* Utility.swift in Sources */,
 				1803503E27182DFE00CCAED9 /* StationResponse.swift in Sources */,
 				1803503F27182DFE00CCAED9 /* EmptyCellCell.swift in Sources */,
@@ -2712,6 +2743,7 @@
 				1863C9932735109A00A13ECB /* RememberUser+CoreDataClass.swift in Sources */,
 				18BE00B42758DF5F00E0414D /* TimeSlotReusableView.swift in Sources */,
 				1803504627182DFE00CCAED9 /* BookingStatusVC.swift in Sources */,
+				183DC6EC27FC9B530065D466 /* AmountVC.swift in Sources */,
 				1863C9952735109A00A13ECB /* RememberUser+CoreDataProperties.swift in Sources */,
 				1803504727182DFE00CCAED9 /* CustomAnnotation.swift in Sources */,
 				1803504827182DFE00CCAED9 /* VehicleResource.swift in Sources */,
@@ -2725,6 +2757,7 @@
 				1803504F27182DFE00CCAED9 /* StationCell.swift in Sources */,
 				1865A0DE272983CD00D0EA9C /* AddFundVC.swift in Sources */,
 				18BE00A12758B26600E0414D /* TimeSlotCell.swift in Sources */,
+				183DC6F027FC9B580065D466 /* TimeVC.swift in Sources */,
 				1803505027182DFE00CCAED9 /* StrartChargingVC.swift in Sources */,
 				182606A32738FE8E00D0C055 /* QrScannerView.swift in Sources */,
 				1844D79C27456D33007E2F0F /* PaymentDetailVC.swift in Sources */,
@@ -2853,6 +2886,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183DC6F527FC9B5E0065D466 /* SocVC.swift in Sources */,
 				186869F7274CFE70005D2DC6 /* HttpUtility.swift in Sources */,
 				1877F917275930F30052AE80 /* RfidVC.swift in Sources */,
 				186869F8274CFE70005D2DC6 /* UserEvs+CoreDataClass.swift in Sources */,
@@ -2912,11 +2946,13 @@
 				18686A21274CFE70005D2DC6 /* VehicleCell.swift in Sources */,
 				18686A22274CFE70005D2DC6 /* HelpVC.swift in Sources */,
 				18686A23274CFE70005D2DC6 /* StationsExtension.swift in Sources */,
+				183DC6E727FC9B490065D466 /* UtaTabController.swift in Sources */,
 				18686A24274CFE70005D2DC6 /* ProfileVC.swift in Sources */,
 				18686A25274CFE70005D2DC6 /* MenuViewController.swift in Sources */,
 				18686A26274CFE70005D2DC6 /* StationDetailViewController.swift in Sources */,
 				18CAE942277DC71A0087B0EF /* TabController.swift in Sources */,
 				18686A27274CFE70005D2DC6 /* ForgetVC.swift in Sources */,
+				183DC6E427FC9B450065D466 /* UnitVC.swift in Sources */,
 				18686A28274CFE70005D2DC6 /* Utility.swift in Sources */,
 				18686A29274CFE70005D2DC6 /* StationResponse.swift in Sources */,
 				18686A89274D0C48005D2DC6 /* VrajTheme.swift in Sources */,
@@ -2937,6 +2973,7 @@
 				18686A36274CFE70005D2DC6 /* RememberUser+CoreDataClass.swift in Sources */,
 				18BE00B52758DF5F00E0414D /* TimeSlotReusableView.swift in Sources */,
 				18686A37274CFE70005D2DC6 /* BookingStatusVC.swift in Sources */,
+				183DC6ED27FC9B530065D466 /* AmountVC.swift in Sources */,
 				18686A38274CFE70005D2DC6 /* RememberUser+CoreDataProperties.swift in Sources */,
 				18686A39274CFE70005D2DC6 /* CustomAnnotation.swift in Sources */,
 				18686A3A274CFE70005D2DC6 /* VehicleResource.swift in Sources */,
@@ -2950,6 +2987,7 @@
 				18686A40274CFE70005D2DC6 /* ChargePark.xcdatamodeld in Sources */,
 				18686A41274CFE70005D2DC6 /* StationCell.swift in Sources */,
 				18BE00A22758B26600E0414D /* TimeSlotCell.swift in Sources */,
+				183DC6F127FC9B590065D466 /* TimeVC.swift in Sources */,
 				18686A42274CFE70005D2DC6 /* AddFundVC.swift in Sources */,
 				18686A43274CFE70005D2DC6 /* StrartChargingVC.swift in Sources */,
 				18686A44274CFE70005D2DC6 /* QrScannerView.swift in Sources */,
@@ -2963,6 +3001,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183DC6F327FC9B5C0065D466 /* SocVC.swift in Sources */,
 				18B8F0B026EFA68300A12A4C /* HttpUtility.swift in Sources */,
 				1877F915275930F30052AE80 /* RfidVC.swift in Sources */,
 				180D31A027363DEF00D5726B /* UserEvs+CoreDataClass.swift in Sources */,
@@ -3049,6 +3088,9 @@
 				1863C9942735109A00A13ECB /* RememberUser+CoreDataProperties.swift in Sources */,
 				1875079926F4CE3700662143 /* CustomAnnotation.swift in Sources */,
 				18566996270C2A62000F8A86 /* VehicleResource.swift in Sources */,
+				183DC6EB27FC9B520065D466 /* AmountVC.swift in Sources */,
+				183DC6E927FC9B4B0065D466 /* UtaTabController.swift in Sources */,
+				183DC6EA27FC9B4F0065D466 /* UnitVC.swift in Sources */,
 				187CBE3F26EF633E00C3B611 /* AppDelegate.swift in Sources */,
 				187CBE4126EF633E00C3B611 /* SceneDelegate.swift in Sources */,
 				18A75F432754DDB7001A45B8 /* Theme.swift in Sources */,
@@ -3060,6 +3102,7 @@
 				187CBE4926EF633E00C3B611 /* ChargePark.xcdatamodeld in Sources */,
 				1811A4DD26FB92E2001425BA /* StationCell.swift in Sources */,
 				18BE00A02758B26600E0414D /* TimeSlotCell.swift in Sources */,
+				183DC6EF27FC9B570065D466 /* TimeVC.swift in Sources */,
 				1865A0DD272983CD00D0EA9C /* AddFundVC.swift in Sources */,
 				1888AEC42711906900DA4BFD /* StrartChargingVC.swift in Sources */,
 				182606A22738FE8E00D0C055 /* QrScannerView.swift in Sources */,
@@ -3204,6 +3247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183DC6F627FC9B5F0065D466 /* SocVC.swift in Sources */,
 				18CA7EBB2754D45A0053CD33 /* HttpUtility.swift in Sources */,
 				1877F918275930F30052AE80 /* RfidVC.swift in Sources */,
 				18CA7EBC2754D45A0053CD33 /* UserEvs+CoreDataClass.swift in Sources */,
@@ -3263,11 +3307,13 @@
 				18CA7EE82754D45A0053CD33 /* VehicleCell.swift in Sources */,
 				18CA7EE92754D45A0053CD33 /* HelpVC.swift in Sources */,
 				18CA7EEA2754D45A0053CD33 /* StationsExtension.swift in Sources */,
+				183DC6E627FC9B490065D466 /* UtaTabController.swift in Sources */,
 				18CA7EEB2754D45A0053CD33 /* ProfileVC.swift in Sources */,
 				18CA7EEC2754D45A0053CD33 /* MenuViewController.swift in Sources */,
 				18CA7EED2754D45A0053CD33 /* StationDetailViewController.swift in Sources */,
 				18CAE943277DC71A0087B0EF /* TabController.swift in Sources */,
 				18CA7EEE2754D45A0053CD33 /* ForgetVC.swift in Sources */,
+				183DC6E327FC9B440065D466 /* UnitVC.swift in Sources */,
 				18CA7EEF2754D45A0053CD33 /* Utility.swift in Sources */,
 				18CA7EF02754D45A0053CD33 /* StationResponse.swift in Sources */,
 				18CA7EF12754D45A0053CD33 /* EmptyCellCell.swift in Sources */,
@@ -3288,6 +3334,7 @@
 				18CA7EFE2754D45A0053CD33 /* BookingStatusVC.swift in Sources */,
 				18BE00B62758DF5F00E0414D /* TimeSlotReusableView.swift in Sources */,
 				18CA7EFF2754D45A0053CD33 /* RememberUser+CoreDataProperties.swift in Sources */,
+				183DC6EE27FC9B540065D466 /* AmountVC.swift in Sources */,
 				18CA7F002754D45A0053CD33 /* CustomAnnotation.swift in Sources */,
 				18CA7F012754D45A0053CD33 /* VehicleResource.swift in Sources */,
 				18CA7F022754D45A0053CD33 /* AppDelegate.swift in Sources */,
@@ -3301,6 +3348,7 @@
 				18CA7F072754D45A0053CD33 /* ChargePark.xcdatamodeld in Sources */,
 				18CA7F082754D45A0053CD33 /* StationCell.swift in Sources */,
 				18BE00A32758B26600E0414D /* TimeSlotCell.swift in Sources */,
+				183DC6F227FC9B590065D466 /* TimeVC.swift in Sources */,
 				18CA7F092754D45A0053CD33 /* AddFundVC.swift in Sources */,
 				18CA7F0A2754D45A0053CD33 /* StrartChargingVC.swift in Sources */,
 				18CA7F0B2754D45A0053CD33 /* QrScannerView.swift in Sources */,
@@ -3352,7 +3400,7 @@
 					"$(PROJECT_DIR)/ChargePark/RazorpayF",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 4.5;
+				MARKETING_VERSION = 4.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vpower.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3389,7 +3437,7 @@
 					"$(PROJECT_DIR)/ChargePark/RazorpayF",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 4.5;
+				MARKETING_VERSION = 4.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vpower.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3483,7 +3531,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3F6F42LQ9S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3500,7 +3548,7 @@
 					"$(PROJECT_DIR)/ChargePark/RazorpayF",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrajev.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3520,7 +3568,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3F6F42LQ9S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3537,7 +3585,7 @@
 					"$(PROJECT_DIR)/ChargePark/RazorpayF",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrajev.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3847,7 +3895,7 @@
 					"$(PROJECT_DIR)/ChargePark/RazorpayF",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.startevcharge.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3885,7 +3933,7 @@
 					"$(PROJECT_DIR)/ChargePark/RazorpayF",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.startevcharge.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
